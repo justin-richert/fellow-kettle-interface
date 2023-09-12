@@ -1,0 +1,42 @@
+[tool.black]
+line-length = 100
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.githooks
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | yoyo
+    | \.direnv
+  )/
+  | setup.py
+)
+'''
+
+[tool.isort]
+# skip = ["scripts"," main.py"]
+line_length = 100
+balanced_wrapping = true
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+omit = ["tests/*"]
+[tool.coverage.report]
+omit = ["tests/*"]

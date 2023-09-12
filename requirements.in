@@ -1,0 +1,3 @@
+aiomqtt
+asyncpio @ git+https://github.com/spthm/asyncpio@937f0a5ea35591d63c05e2c5602ca8851ef981bf
+fellow-py

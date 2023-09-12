@@ -1,0 +1,9 @@
+-c requirements.txt
+
+black
+isort
+pdbpp
+pytest
+pytest-asyncio
+pytest-cov
+ruff
